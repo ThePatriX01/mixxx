@@ -7,7 +7,7 @@
     </info>
     <controller id="AMX">
         <scriptfiles>
-            <file functionprefix="AMX" filename="AMX_MIDI_1-scripts.js"/>
+            <file functionprefix="AMX" filename="Akai-AMX-scripts.js"/>
         </scriptfiles>
         <controls>
             <control>
@@ -104,8 +104,53 @@
             <control>
                 <group>[Master]</group>
                 <key>AMX.shiftButton</key>
+                <status>0x80</status>
+                <midino>0x00</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Master]</group>
+                <key>AMX.shiftButton</key>
                 <status>0x90</status>
                 <midino>0x00</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Master]</group>
+                <key>AMX.searchButton</key>
+                <status>0x80</status>
+                <midino>0x02</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Master]</group>
+                <key>AMX.searchButton</key>
+                <status>0x90</status>
+                <midino>0x02</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Master]</group>
+                <key>AMX.searchButton</key>
+                <status>0x80</status>
+                <midino>0x03</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Master]</group>
+                <key>AMX.searchButton</key>
+                <status>0x90</status>
+                <midino>0x03</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -346,11 +391,11 @@
             </control>
             <control>
                 <group>[Channel2]</group>
-                <key>pregain</key>
+                <key>AMX.pregain</key>
                 <status>0xB0</status>
                 <midino>0x3D</midino>
                 <options>
-                    <diff/>
+                    <script-binding/>
                 </options>
             </control>
             <control>
@@ -444,6 +489,15 @@
                 </options>
             </control>
             <control>
+                <group>[Mixer Profile]</group>
+                <key>xFaderReverse</key>
+                <status>0xB0</status>
+                <midino>0x3A</midino>
+                <options>
+                    <switch/>
+                </options>
+            </control>
+            <control>
                 <group>[Channel1]</group>
                 <key>filterHighKill</key>
                 <status>0x80</status>
@@ -454,11 +508,11 @@
             </control>
             <control>
                 <group>[Channel1]</group>
-                <key>pregain</key>
+                <key>AMX.pregain</key>
                 <status>0xB0</status>
                 <midino>0x3C</midino>
                 <options>
-                    <diff/>
+                    <script-binding/>
                 </options>
             </control>
             <control>
